@@ -18,7 +18,7 @@ export const Login = () => {
 
   const loginSubmit = async (item) => {
     item.preventDefault()
-    const url = "http://localhost:8001/api/login"
+    const url = `${import.meta.env.VITE_API_KEY}/login`
     const loginFetch = await fetch(url, {
       body: JSON.stringify(loginData),
       method: 'POST',
