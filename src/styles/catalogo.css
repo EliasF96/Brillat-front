@@ -1,0 +1,89 @@
+.mainEventContainer {
+  margin: 50px auto;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90vw;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.mainEventContainer a {
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+  border: 5px outset #222;
+  background-color: #555;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.mainEventContainer a:hover {
+  background-color: #999;
+  transition: background-color 0.25s;
+}
+.mainEventContainer a:active {
+  border: 5px inset #222;
+  background-color: #333;
+}
+.mainEventContainer .eventContainer1,
+.mainEventContainer .eventContainer2 {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.mainEventContainer .eventContainer1 p,
+.mainEventContainer .eventContainer2 p {
+  font-size: 18px;
+  color: orange;
+  text-align: center;
+}
+.mainEventContainer .eventContainer1 h1,
+.mainEventContainer .eventContainer2 h1 {
+  text-align: center;
+}
+.mainEventContainer .eventContainer1 .img-body,
+.mainEventContainer .eventContainer2 .img-body {
+  height: 250px;
+}
+.mainEventContainer h1 {
+  color: yellow;
+}
+.mainEventContainer .infoContainer {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mainEventContainer .contentCarousel {
+  background-color: transparent;
+  width: 550px;
+  height: auto;
+  margin-top: 10px;
+}
+.mainEventContainer .contentCarousel .slick-dots {
+  background-color: transparent;
+}
+
+@media (max-width: 375px) {
+  .mainEventContainer {
+    flex-direction: column;
+    margin: auto auto;
+    margin-bottom: 30px;
+  }
+  .mainEventContainer .eventContainer1,
+  .mainEventContainer .eventContainer2 {
+    width: 90%;
+  }
+  .mainEventContainer .eventContainer1 .infoContainer,
+  .mainEventContainer .eventContainer2 .infoContainer {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .mainEventContainer .eventContainer1 .contentCarousel,
+  .mainEventContainer .eventContainer2 .contentCarousel {
+    width: 100%;
+  }
+}/*# sourceMappingURL=catalogo.css.map */

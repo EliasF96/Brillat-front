@@ -1,0 +1,132 @@
+h1 {
+  text-align: center;
+  color: #ff5;
+}
+
+.filterContainer {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+.filterContainer li:first-child:hover {
+  color: #fff;
+  cursor: default;
+}
+.filterContainer li:hover {
+  color: #0f0;
+  cursor: pointer;
+}
+.filterContainer li.active {
+  color: #0f0;
+}
+
+/* ProductList */
+.productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(5px 5px 5px #000);
+  margin-bottom: 30px;
+}
+.productsContainer .productContainer {
+  background-color: #fff;
+  border: 5px outset #666;
+  width: 175px;
+  padding: 0 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  text-align: center;
+  line-height: normal;
+}
+.productsContainer img {
+  width: 100px;
+  height: 100px;
+}
+.productsContainer .actions {
+  bottom: 0;
+}
+.productsContainer .actions .amountBuySection {
+  margin: 0;
+  padding: 0;
+}
+.productsContainer .actions .buyButton {
+  width: 100%;
+}
+.productsContainer .actions .buyButton p {
+  color: #0f0;
+}
+
+.infoContainer {
+  width: 100px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  max-height: 100vh;
+}
+.infoContainer p {
+  font-size: 12px;
+}
+
+.increaseBtn,
+.decreaseBtn {
+  padding: 0;
+  width: 50%;
+}
+
+.amountBuySection {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 10px;
+}
+.amountBuySection .amountCounter {
+  margin: 5px;
+  width: 100px;
+  border: none;
+  text-align: center;
+}
+.amountBuySection .buyButton {
+  width: 100%;
+}
+
+.amountCounter::-webkit-inner-spin-button {
+  opacity: 1;
+}
+
+.amountCounter:focus-visible {
+  outline: none;
+}
+
+.addProductButton {
+  display: block;
+  margin: auto auto;
+  display: flex;
+  align-items: center;
+}
+.addProductButton svg {
+  margin-right: 10px;
+}
+
+@media (max-width: 376px) {
+  .filterContainer {
+    flex-wrap: wrap;
+  }
+  .filterContainer li {
+    margin: 5px;
+  }
+  .productsContainer .productContainer {
+    margin: 5px;
+    width: 150px;
+  }
+  .productsContainer .productContainer p {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+  }
+  .productsContainer .productContainer input {
+    width: 75px;
+  }
+}/*# sourceMappingURL=tienda.css.map */

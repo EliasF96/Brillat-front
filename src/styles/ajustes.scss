@@ -1,0 +1,163 @@
+
+.maintenanceTable {
+    width: 90%;
+    margin-bottom: 25px;
+    th {
+      text-align: center;
+      background-color: #000;
+      color: #ff0;
+    }
+  
+    th:last-child {
+      width: 125px;
+    }
+  
+    td:last-child {
+      button {
+        margin: 0 3px;
+      }
+    }
+  
+    td:nth-child(7) {
+      text-align: left;
+    }
+  
+    td {
+      background-color: #222;
+      border: 5px solid #333;
+      text-align: center;
+      color: #0f0;
+      padding: 0 10px;
+      height: 50px;
+    }
+  
+    th:hover {
+      color: green;
+    }
+  }
+  
+  //AJUSTES
+  //Para un modal con fondo bloqueado, agregar un div antes del modal de paso para activarlo
+  .backgroundModal {
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0);
+    z-index: -10;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .backgroundModal.active {
+    z-index: 2;
+    transition: background-color 1s;
+    background-color: rgb(0, 0, 0, .8);
+  
+    .formContainer {
+      transition: transform 1s;
+      transform: translateY(0px);
+    }
+  }
+  .managerTitle{
+    color: #0f0;
+    margin-top: 20px;
+    background-color: #000;
+  }
+  .formContainer {
+    width: 500px;
+    height: fit-content;
+    display: block;
+    margin: auto auto;
+    transform: translateY(-1000vh);
+    transition: transform 1s;
+    z-index: 1;
+    background-color: #222;
+    
+    
+    .formContainerHeader {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 100%;
+      justify-content: space-around;
+      background-color: #111;
+      align-items: center;
+  
+      .XIcon {
+        font-size: 40px;
+        color: #ea138b;
+      }
+  
+      .XIcon:hover {
+        color: #e669ae;
+      }
+  
+      .XIcon:active {
+        color: #622a49;
+      }
+  
+      h2 {
+        color: #ea138b;
+      }
+    }
+  
+    .formContainerBody {
+      margin: auto auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 25px;
+  
+      label,
+      input {
+        margin: 10px auto;
+        width: 50%;
+      }
+  
+      label {
+        color: yellow;
+      }
+  
+      button {
+        width: auto;
+        height: 50px;
+        margin: auto auto;
+      }
+    }
+  
+    .formContainerFooter {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-bottom: 25px;
+  
+    }
+  
+  }
+  
+  
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+  
+    li {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      list-style: none;
+  
+      a {
+        text-decoration: none;
+        color: rgb(227, 52, 230);
+      }
+  
+      a:visited {
+        color: none;
+      }
+  
+    }
+  }
+  
+  

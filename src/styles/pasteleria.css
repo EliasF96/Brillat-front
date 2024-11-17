@@ -1,0 +1,53 @@
+.localInfoContainer {
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90vw;
+  margin: auto auto;
+  margin-bottom: 25px;
+}
+.localInfoContainer h2 {
+  color: #fff;
+}
+.localInfoContainer a {
+  text-decoration: none;
+  margin: 0;
+}
+.localInfoContainer h2 {
+  text-align: center;
+  margin: 10px 25px;
+}
+.localInfoContainer .infoBody {
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  margin: auto auto;
+  display: flex;
+  flex-direction: row;
+}
+.localInfoContainer .infoBody .infoContainer1,
+.localInfoContainer .infoBody .infoContainer2 {
+  margin: 15px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.localInfoContainer .infoBody iframe {
+  margin: 20px 10px;
+  width: 100%;
+}
+
+@media (max-width: 375px) {
+  .localInfoContainer .infoBody {
+    flex-direction: column;
+  }
+  .localInfoContainer img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=pasteleria.css.map */
