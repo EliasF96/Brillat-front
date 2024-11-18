@@ -25,6 +25,7 @@ export const Header = ({ state }) => {
     state < 0
       ? fetchCartData()
       : ""
+    console.log(document.cookie)
   }, [state])
 
   const navigate = useNavigate()
