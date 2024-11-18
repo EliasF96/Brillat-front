@@ -110,7 +110,7 @@ h1 {
   margin-right: 10px;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 768px) {
   .filterContainer {
     flex-wrap: wrap;
   }
