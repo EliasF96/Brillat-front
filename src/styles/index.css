@@ -14,20 +14,20 @@
 
 .contentCarousel {
   background-color: rgba(0, 0, 0, 0.75);
-  height: -moz-fit-content;
-  height: fit-content;
+  border: none;
+  position: relative;
 }
 .contentCarousel .Carousel {
   background-color: transparent;
 }
-
-p{
-  color:#e5dcb8
+.contentCarousel p {
+  color: #f9f;
 }
-h2 {
-  color: rgb(218, 78, 183);
+.contentCarousel h2 {
+  color: #f0f;
   font-family: Georgia;
 }
+
 .slick-dots {
   border: none;
   bottom: 0px;
