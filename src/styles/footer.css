@@ -89,7 +89,7 @@ footer {
   height: 100px;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 426px) {
   .footerContainer {
     z-index: 2;
     width: 100%;
