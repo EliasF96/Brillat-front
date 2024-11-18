@@ -17,6 +17,9 @@
   height: -moz-fit-content;
   height: fit-content;
 }
+.contentCarousel .Carousel {
+  background-color: transparent;
+}
 
 p{
   color:#e5dcb8
@@ -26,7 +29,9 @@ h2 {
   font-family: Georgia;
 }
 .slick-dots {
-  background-color: rgba(0, 0, 0, 0.75);
+  border: none;
+  bottom: 0px;
+  position: relative;
 }
 
 .subtitle {
