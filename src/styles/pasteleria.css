@@ -43,7 +43,7 @@
   width: 100%;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 768px) {
   .localInfoContainer .infoBody {
     flex-direction: column;
   }
