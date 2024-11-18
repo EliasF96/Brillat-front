@@ -20,7 +20,7 @@ export const Home = () => {
     <>
       <Header />
       <div className="contentCarousel">
-        <Slider {...settings}>
+        <Slider {...settings} className="Carousel">
           {sliderGallery.map((item) => (
             <div key={item.id}>
               <div className="img-body">
