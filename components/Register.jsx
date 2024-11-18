@@ -14,7 +14,7 @@ export const Register = () => {
     const registerSubmit = async (item) => {
         item.preventDefault()
         registerData.password != registerData.repeatPassword ? alert("Pasword are diferent, fix it") : ""
-        const url = "http://localhost:8001/api/register"
+    const url = `${import.meta.env.VITE_API_KEY}/register`
         const registerFetch = await fetch(url, {
             method: "POST",
             body: JSON.stringify(registerData),
