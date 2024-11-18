@@ -42,7 +42,7 @@ export const Login = () => {
     <>
       <Header />
       <form onSubmit={e => loginSubmit(e)} method="post" className='loginForm'><br />
-        <p>Nombre usuario o telefono</p>
+        <p>Nombre de usuario</p>
         <input onChange={e => setFormValues(e.target)} type="text" name="username" id="username" /><br />
 
         <p>Contraseña</p>
