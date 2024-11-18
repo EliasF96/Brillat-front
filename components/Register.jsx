@@ -39,7 +39,7 @@ export const Register = () => {
             <Header />
             <form onSubmit={e => registerSubmit(e)} className='registerForm'>
                 <p>Nombre de usuario</p>
-                <input type="text" name="username" id="username" placeholder='Nombre o telefono' onChange={e => setFormValues(e.target)} /><br />
+                <input type="text" name="username" id="username" placeholder='Nombre' onChange={e => setFormValues(e.target)} /><br />
                 <p>Contraseña</p>
                 <input type="password" name="password" id="password" placeholder="Contraseña" onChange={e => setFormValues(e.target)} /><br />
                 <p>Repite tu contraseña</p>
