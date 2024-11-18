@@ -67,7 +67,7 @@
   background-color: transparent;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 768px) {
   .mainEventContainer {
     flex-direction: column;
     margin: auto auto;
