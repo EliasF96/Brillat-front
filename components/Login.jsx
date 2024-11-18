@@ -29,6 +29,8 @@ export const Login = () => {
     })
     // .then(async res => {const loginResult = await res.json()      })
     if (loginFetch.ok) {
+      let result = await loginFetch.json()
+      document.cookie = `access_token=${result.token}`
       alert("Usuario Conectado \nLa sesion se mantendrá activa por 1 hs a menos que cierres sesión")
       navigate("/")
     } else {
