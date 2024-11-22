@@ -27,6 +27,7 @@ export const Login = () => {
       redirect: 'follow',
       credentials: 'include', // Don't forget to specify this if you need cookies
       headers: headers,
+      "Access-Control-Allow-Credentials":true
     })
     // .then(async res => {const loginResult = await res.json()      })
     if (loginFetch.ok) {
