@@ -4,7 +4,7 @@ export const filter = (value, filterBoolean, filterValue, list) => {
     // console.log(filterBoolean)
     // console.log(filterValue)
     // console.log(list)
-    if (value.textContent == "all") {
+    if (value.textContent == "Todo") {
         filterValue("")
         filterBoolean(false)
     }else    {
